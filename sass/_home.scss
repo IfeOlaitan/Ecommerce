@@ -1,0 +1,291 @@
+.container {
+    max-width: 130rem;
+    margin: auto;
+    padding: 0 2.5rem 0 2.5rem;
+}
+
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.logo {
+    img {
+        width: 12.5rem;
+    }
+}
+
+.nav {
+    flex: 1;
+    text-align: right;
+    
+    &__list {
+        display: inline-block;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #555;
+        font-size: 1.6rem;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 30rem;
+
+    h1 {
+        font-size: 5rem;
+        line-height: 60px;
+        margin: 2.5rem 0;
+    }
+
+    p {
+        color: #555;
+    }
+
+    img {
+        width: 100%;
+        padding: 5rem 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: .8rem 3rem;
+    margin: 3rem 0;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all .1s ease-in;
+
+    &:hover {
+        background: #563434;
+    }
+}
+
+.section-categories {
+    margin: 7rem 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 25rem;
+    margin-bottom: 3rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.small-container {
+    max-width: 108rem;
+    margin: auto;
+    padding: 0 2.5rem 0 2.5rem;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 1rem;
+    min-width: 20rem;
+    margin-bottom: 5rem;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h4 {
+        color: #555;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+.rating {
+    color: #ff523b;
+}
+
+.section-products {
+
+    &__title {
+        color: #555;
+        text-align: center;
+        margin: 0 auto 5rem;
+        position: relative;
+        line-height: 60px;
+
+        &::after {
+            content: "";
+            background: #ff523b;
+            width: 8rem;
+            height: .5rem;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.section-offers {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 8rem;
+    padding: 3rem 0;
+
+    .row {
+        .col-2 {
+            img {
+                padding: 5rem;
+            }
+
+            small {
+                color: #555;
+            }
+        }
+    }
+}
+
+.section-testimonial {
+    padding-top: 10rem;
+
+    .col-3 {
+        text-align: center;
+        padding: 4rem 2rem;
+        box-shadow: 0 0 2rem 0 rgba(0,0,0,.1);
+        cursor: pointer;
+        transition: all .2s ease-in;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 3rem 0 rgba(0,0,0,.3);
+        }
+
+        .fa-quote-left {
+            color:#ff523b;
+            font-size: 3.4rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 12px 0;
+            color: #777;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #555;
+        }
+    }
+
+    img {
+        width: 50px;
+        margin-top: 2rem;
+        border-radius: 50%;
+    }
+}
+
+.section-brands {
+    margin: 10rem auto;
+}
+
+.col-5 {
+    width: 16rem;
+
+    img {
+        width: 100%;
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 1.4rem;
+    padding: 6rem 0 2rem;
+
+    p {
+        color: #8a8a8a;
+    }
+
+    h3 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    &__col-1,
+    &__col-2,
+    &__col-3,
+    &__col-4 {
+        min-width: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    &__col-1 {
+        flex-basis: 30%;
+    }
+
+    &__col-2 {
+        flex: 1;
+        text-align: center;
+
+        img {
+            width: 18rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__col-3,
+    &__col-4 {
+        flex-basis: 12%;
+        text-align: center;
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.app-logo {
+    margin-top: 2rem;
+
+    img {
+        width: 14rem;
+    }
+}
