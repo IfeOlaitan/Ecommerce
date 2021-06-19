@@ -1,3 +1,5 @@
+$bp-largest: 50em; //800px
+
 .container {
     max-width: 130rem;
     margin: auto;
@@ -20,6 +22,7 @@
     }
 }
 
+
 .nav {
     flex: 1;
     text-align: right;
@@ -27,17 +30,38 @@
     &__list {
         display: inline-block;
         list-style: none;
+        position: relative;
+
+        @media only screen and (max-width: $bp-largest) {
+            position: absolute;
+            top: 7rem;
+            left: 0;
+            background: #333;
+            width: 100%;
+            color:#fff;
+        }
     }
 
     &__item {
         display: inline-block;
         margin-right: 2rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            display: block;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-right: 5rem;
+        }
     }
 
     &__link {
         text-decoration: none;
         color: #555;
         font-size: 1.6rem;
+
+        @media only screen and (max-width: $bp-largest) {
+            color: #fff;
+        }
     }
 }
 
@@ -280,6 +304,13 @@
             list-style: none;
         }
     }
+
+    hr {
+        //border: none;
+        color: #b5b5b5;
+        height: 1px;
+        margin: 2rem 0;
+    }
 }
 
 .app-logo {
@@ -287,5 +318,20 @@
 
     img {
         width: 14rem;
+    }
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 2.8rem;
+    margin-left: 2rem;
+    display: none;
+
+    @media only screen and (max-width: $bp-largest) {
+        display: block;
+        cursor: pointer;
     }
 }
