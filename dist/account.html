@@ -26,11 +26,44 @@
                 </ul>
             </nav>
 
-            <img src="img/cart.png" width="30px" height="30px">
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
             <img src="img/menu.png" class="menu-icon">
         </div>
     </div>
 
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/image1.png">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span id="login">Login</span>
+                            <span id="signup">Register</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form id="login-form">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="#">Forgot Password</a>
+                        </form>
+
+                        
+                        <form id="reg-form">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="E-mail">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -73,6 +106,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/1194a5d092.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

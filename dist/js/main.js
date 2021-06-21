@@ -28,3 +28,4 @@ smallImage[2].addEventListener('click', function () {
 smallImage[3].addEventListener('click', function () {
     productImage.src = smallImage[3].src;
 });
+
